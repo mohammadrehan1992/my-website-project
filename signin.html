@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - My Website</title>
+    <link rel="stylesheet" href="css/signin.css">
+</head>
+<body>
+    <div class="signin-container">
+        <div class="signin-card">
+            <div class="signin-header">
+                <h1>Welcome Back</h1>
+                <p>Sign in to your account</p>
+            </div>
+            
+            <form class="signin-form" id="signinForm">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="password-input">
+                        <input type="password" id="password" name="password" required>
+                        <button type="button" class="toggle-password" id="togglePassword">
+                            <span class="eye-icon">👁️</span>
+                        </button>
+                    </div>
+                    <span class="error-message" id="password-error"></span>
+                </div>
+                
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox" id="remember" name="remember">
+                        <span class="checkmark"></span>
+                        Remember me
+                    </label>
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </div>
+                
+                <button type="submit" class="signin-btn">
+                    <span class="btn-text">Sign In</span>
+                    <div class="loading-spinner" style="display: none;"></div>
+                </button>
+            </form>
+            
+            <div class="signin-footer">
+                <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+                <div class="divider">
+                    <span>or</span>
+                </div>
+                <div class="social-signin">
+                    <button class="social-btn google-btn">
+                        <span class="social-icon">🔍</span>
+                        Continue with Google
+                    </button>
+                    <button class="social-btn facebook-btn">
+                        <span class="social-icon">📘</span>
+                        Continue with Facebook
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="background-decoration">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
+        </div>
+    </div>
+    
+    <div class="back-home">
+        <a href="index.html">← Back to Home</a>
+    </div>
+    
+    <script src="js/signin.js"></script>
+</body>
+</html>
